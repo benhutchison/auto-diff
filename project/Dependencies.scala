@@ -19,7 +19,7 @@ object Dependencies {
   val catsVersion = "0.9.0"
 
   val cats: D = group( "org.typelevel", catsVersion )( "cats-core" )( "cats" ) ++
-    (group( "com.github.benhutchison" %% "mouse" % "0.9" )() map (_.exclude( "org.typelevel", "cats_2.12" ) ))
+    (group( "org.typelevel" %% "mouse" % "0.16" )() map (_.exclude( "org.typelevel", "cats_2.12" ) ))
 
   val monocleVersion = "1.4.0"
 
